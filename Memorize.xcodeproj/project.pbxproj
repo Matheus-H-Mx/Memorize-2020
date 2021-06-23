@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA37ECB4267D7766003D9890 /* Array+identifible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA37ECB3267D7766003D9890 /* Array+identifible.swift */; };
+		DA99E51D2682A3FE00048497 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99E51C2682A3FE00048497 /* Array+Only.swift */; };
+		DAAB8C59264DC25000C2E123 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB8C58264DC25000C2E123 /* MemoryGame.swift */; };
+		DAAB8C5B264DE2B200C2E123 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB8C5A264DE2B200C2E123 /* EmojiMemoryGame.swift */; };
+		DAB065342652F1FE00A729EF /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB065332652F1FE00A729EF /* Grid.swift */; };
+		DAB06536265304E800A729EF /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB06535265304E800A729EF /* GridLayout.swift */; };
 		DACC88A9264C309300C02F41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC88A8264C309300C02F41 /* AppDelegate.swift */; };
 		DACC88AB264C309300C02F41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC88AA264C309300C02F41 /* SceneDelegate.swift */; };
-		DACC88AD264C309300C02F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC88AC264C309300C02F41 /* ContentView.swift */; };
+		DACC88AD264C309300C02F41 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC88AC264C309300C02F41 /* EmojiMemoryGameView.swift */; };
 		DACC88AF264C309300C02F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACC88AE264C309300C02F41 /* Assets.xcassets */; };
 		DACC88B2264C309300C02F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACC88B1264C309300C02F41 /* Preview Assets.xcassets */; };
 		DACC88B5264C309300C02F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACC88B3264C309300C02F41 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA37ECB3267D7766003D9890 /* Array+identifible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+identifible.swift"; sourceTree = "<group>"; };
+		DA99E51C2682A3FE00048497 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
+		DAAB8C58264DC25000C2E123 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		DAAB8C5A264DE2B200C2E123 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		DAB065332652F1FE00A729EF /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		DAB06535265304E800A729EF /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		DACC88A5264C309300C02F41 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACC88A8264C309300C02F41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DACC88AA264C309300C02F41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DACC88AC264C309300C02F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DACC88AC264C309300C02F41 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		DACC88AE264C309300C02F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DACC88B1264C309300C02F41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DACC88B4264C309300C02F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,9 +68,15 @@
 		DACC88A7264C309300C02F41 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				DACC88AC264C309300C02F41 /* EmojiMemoryGameView.swift */,
+				DAAB8C5A264DE2B200C2E123 /* EmojiMemoryGame.swift */,
+				DAAB8C58264DC25000C2E123 /* MemoryGame.swift */,
+				DAB065332652F1FE00A729EF /* Grid.swift */,
+				DAB06535265304E800A729EF /* GridLayout.swift */,
+				DA37ECB3267D7766003D9890 /* Array+identifible.swift */,
+				DA99E51C2682A3FE00048497 /* Array+Only.swift */,
 				DACC88A8264C309300C02F41 /* AppDelegate.swift */,
 				DACC88AA264C309300C02F41 /* SceneDelegate.swift */,
-				DACC88AC264C309300C02F41 /* ContentView.swift */,
 				DACC88AE264C309300C02F41 /* Assets.xcassets */,
 				DACC88B3264C309300C02F41 /* LaunchScreen.storyboard */,
 				DACC88B6264C309300C02F41 /* Info.plist */,
@@ -147,7 +165,13 @@
 			files = (
 				DACC88A9264C309300C02F41 /* AppDelegate.swift in Sources */,
 				DACC88AB264C309300C02F41 /* SceneDelegate.swift in Sources */,
-				DACC88AD264C309300C02F41 /* ContentView.swift in Sources */,
+				DAAB8C59264DC25000C2E123 /* MemoryGame.swift in Sources */,
+				DA99E51D2682A3FE00048497 /* Array+Only.swift in Sources */,
+				DA37ECB4267D7766003D9890 /* Array+identifible.swift in Sources */,
+				DACC88AD264C309300C02F41 /* EmojiMemoryGameView.swift in Sources */,
+				DAAB8C5B264DE2B200C2E123 /* EmojiMemoryGame.swift in Sources */,
+				DAB06536265304E800A729EF /* GridLayout.swift in Sources */,
+				DAB065342652F1FE00A729EF /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
