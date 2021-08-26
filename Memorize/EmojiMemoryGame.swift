@@ -5,15 +5,22 @@
 //  Created by Matheus Henrique on 13/05/21.
 //
 
-import SwiftUI
+import Foundation
 
 class EmojiMemoryGame: ObservableObject {
-    @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
+    @Published private var model: MemoryGame<String> = createMemoryGame()
     
     private static func createMemoryGame() -> MemoryGame<String> {
-        let emojis: Array<String> = ["👻","🎃","🕷","💀","👽","🦋"]
-        return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in
-            return emojis[pairIndex]
+        let emojis = ["👻", "🎃", "🕷", "💀", "👾", "👽", "🙀","🤖", "👁","🐐"]
+        
+        // Start up with a random number of pairs of cards between 2 and 9 pairs
+        let numberOfPairs = Int.random(in: 6...10)
+        
+        // Extra Credit item - Select random offset from emojis
+        let randomOffset = Int.random(in: 0 ... emojis.count - numberOfPairs)
+        
+        return MemoryGame<String>(numberOfPairsOfCards: numberOfPairs) { pairIndex in
+            return emojis[pairIndex + randomOffset]
         }
     }
     
@@ -27,7 +34,12 @@ class EmojiMemoryGame: ObservableObject {
     //MARK: - Intent(s)
     
     func choose(card: MemoryGame<String>.Card) {
-        objectWillChange.send()
         model.choose(card: card)
+    }
+    
+    func resetGame() {
+       /* objectWillChange.send()*/
+        model = EmojiMemoryGame.createMemoryGame()
+        
     }
 }

@@ -73,8 +73,8 @@
 		DACC88A7264C309300C02F41 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
-				DAC19EFB26859CC100C00035 /* Cardify.swift */,
 				DACC88AC264C309300C02F41 /* EmojiMemoryGameView.swift */,
+				DAC19EFB26859CC100C00035 /* Cardify.swift */,
 				DA9F4756268410AF009980F5 /* Pie.swift */,
 				DAAB8C5A264DE2B200C2E123 /* EmojiMemoryGame.swift */,
 				DAAB8C58264DC25000C2E123 /* MemoryGame.swift */,
