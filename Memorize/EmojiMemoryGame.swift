@@ -11,10 +11,10 @@ class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGame<String> = createMemoryGame()
     
     private static func createMemoryGame() -> MemoryGame<String> {
-        let emojis = ["👻", "🎃", "🕷", "💀", "👾", "👽", "🙀","🤖", "👁","🐐"]
+        let emojis = ["🎃", "🕷", "💀", "👾", "👽", "🙀","🤖", "👁","🐐"]
         
         // Start up with a random number of pairs of cards between 2 and 9 pairs
-        let numberOfPairs = Int.random(in: 6...10)
+        let numberOfPairs = Int.random(in: 2...9)
         
         // Extra Credit item - Select random offset from emojis
         let randomOffset = Int.random(in: 0 ... emojis.count - numberOfPairs)
